@@ -19,7 +19,7 @@ ReactDOM.createRoot( document.getElementById('root') ).render(
     //Se debe renderizar React, y se recomienda hacerlo en el modo estricto (StricMode)
     <React.StrictMode>
         {/* <HelloWorldApp/> */}
-        {/* <FirstApp title='Hola'/> */}
+        {/* <FirstApp title='HOLA'/> */}
         <CounterApp value={20} />
     </React.StrictMode>
 )

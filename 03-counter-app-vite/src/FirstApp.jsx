@@ -29,9 +29,10 @@ export const FirstApp = ( {title, subTitle, name} ) => { // -> Desestructuro de 
     return (
         //Esto "<>" es un sinonimo de un fragmento, es decir, un encapsulador (agrupador) para enviar un grupo de elementos html
         <>
-            <h1> {title} </h1>
+            <h1 data-testid="test-tltle"> {title} </h1>
             {/* <h1> { getResult() } </h1> */}
             {/* <code> { JSON.stringify( newMessage  ) } </code> */}
+            <p> {subTitle} </p>
             <p> {subTitle} </p>
             <p> {name} </p>
         </>
@@ -46,7 +47,7 @@ FirstApp.propTypes = {
 
 //Declarar Properties por defecto 
 FirstApp.defaultProps = { 
-    title: 'No hay título',
+    // title: 'No hay título',
     subTitle: 'No hay subtítulo',
     name: 'Duvan Chavarro'
 }
